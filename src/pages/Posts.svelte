@@ -1,7 +1,22 @@
+<script>
+  import Card from '../components/Card.svelte'
+  import { getPosts, posts } from '../stores/posts'
+  
+  getPosts()
+
+  function postById(id) {
+    return $posts.find(element => element.id === id)
+  }
+</script>
+
 <svelte:head>
-  <title>Посты</title>
+  <title>Посты ({$posts.length})</title>
 </svelte:head>
 
 <main class="container">
-  <h1>Посты</h1>
+  {#each $posts as { id }}
+  <div>
+    <Card post = {postById(id)} />
+  </div>
+  {/each}
 </main>

@@ -11,5 +11,5 @@
 {#await page}
   <p>Загрузка...</p>
 {:then component}
-  <svelte:component this="{ component }" page="{ ctx }" />
+  <svelte:component this="{component}" page="{ctx}" />
 {/await}
