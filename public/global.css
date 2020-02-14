@@ -1,4 +1,6 @@
 html {
+  overflow-y: scroll;
+  overflow-x: hidden;
   font-size: 18px;
 }
 
@@ -6,7 +8,7 @@ html {
   box-sizing: border-box;
 }
 
-body, h1, h2, h3, h4, p, a {
+body, h1, h2, h3, h4, h5, p, a {
   margin: 0;
   font-size: 100%;
   font-weight: normal;
@@ -14,4 +16,25 @@ body, h1, h2, h3, h4, p, a {
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: rgb(230, 230, 230);
+}
+
+h5 {
+  font-size: 1.3rem;
+}
+
+p {
+  padding: 0.5rem 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
 }

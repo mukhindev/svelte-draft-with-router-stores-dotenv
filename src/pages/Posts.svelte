@@ -14,9 +14,11 @@
 </svelte:head>
 
 <main class="container">
-  {#each $posts as { id }}
-  <div>
-    <Card post = {postById(id)} />
-  </div>
-  {/each}
+  <section class="grid">
+    {#each $posts as { id }}
+    <div>
+      <Card post = {postById(id)} />
+    </div>
+    {/each}
+  </section>
 </main>

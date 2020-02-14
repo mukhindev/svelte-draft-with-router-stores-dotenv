@@ -3,6 +3,15 @@
   const { id, title, body } = post
 </script>
 
+<style>
+.card {
+  background-color: #FFF;
+}
+.card-body {
+  padding: 0.5rem;
+}
+</style>
+
 <div class="card">
   <div class="card-header">
   </div>
