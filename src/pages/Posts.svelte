@@ -16,9 +16,7 @@
 <main class="container">
   <section class="grid">
     {#each $posts as { id }}
-    <div>
-      <Card post = {postById(id)} />
-    </div>
+    <Card post={postById(id)} to="/posts/{id}"/>
     {/each}
   </section>
 </main>

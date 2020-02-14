@@ -1,5 +1,6 @@
 <script>
   export let post
+  export let to
   const { id, title, body } = post
 </script>
 
@@ -16,7 +17,7 @@
   <div class="card-header">
   </div>
   <div class="card-body">
-    <h5 class="card-title">{title}</h5>
+    <h5 class="card-title"><a href="{to}">{title}</a></h5>
     <p class="card-text">{body}</p>
   </div>
 </div>

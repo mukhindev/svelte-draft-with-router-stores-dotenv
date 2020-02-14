@@ -8,7 +8,13 @@ const getPosts = async () => {
   posts.set(json)
 }
 
+const getPostById = async (id) => {
+  const json = await request.get(`posts/${id}`)
+  return json
+}
+
 export {
   posts,
-  getPosts
+  getPosts,
+  getPostById
 }

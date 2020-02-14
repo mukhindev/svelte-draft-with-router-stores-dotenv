@@ -1,5 +1,6 @@
 import Home from '../pages/Home.svelte'
 import Posts from '../pages/Posts.svelte'
+import PostPage from '../pages/PostPage.svelte'
 
 const routes = [
   {
@@ -9,6 +10,10 @@ const routes = [
   {
     path: '/posts',
     page: Posts
+  },
+  {
+    path: '/posts/:id',
+    page: PostPage
   }
 ]
 
