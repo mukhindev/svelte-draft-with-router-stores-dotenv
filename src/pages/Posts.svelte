@@ -16,7 +16,11 @@
 <main class="container">
   <section class="grid">
     {#each $posts as { id }}
-    <Card post={postById(id)} to="/posts/{id}"/>
+    <Card
+      title="{postById(id).title}"
+      body="{postById(id).body}"
+      to="/posts/{id}"
+    />
     {/each}
   </section>
 </main>

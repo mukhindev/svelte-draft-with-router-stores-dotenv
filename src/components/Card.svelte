@@ -1,7 +1,8 @@
 <script>
-  export let post
-  export let to
-  const { id, title, body } = post
+  export let id = ''
+  export let to = ''
+  export let title = ''
+  export let body = ''
 </script>
 
 <style>
@@ -17,7 +18,9 @@
   <div class="card-header">
   </div>
   <div class="card-body">
+    {#if title}
     <h5 class="card-title"><a href="{to}">{title}</a></h5>
+    {/if}
     <p class="card-text">{body}</p>
   </div>
 </div>
